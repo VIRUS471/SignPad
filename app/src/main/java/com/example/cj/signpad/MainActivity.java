@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
                     if(checkEmail(email.getText().toString())){
                         bitmap = signatureView.getSignatureBitmap();
                         path = saveImage(bitmap);
-                        Toast.makeText(MainActivity.this, "File is saved!",
-                                Toast.LENGTH_SHORT).show();
+                    //    Toast.makeText(MainActivity.this, "File is saved!",Toast.LENGTH_SHORT).show();
+                        Log.d("Save State", "File is save");
                         signatureView.clearCanvas();
                         try {
                             sendMail();
@@ -197,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
+    //sends the mail
     private void sendMail() throws Exception {
         if(isOnline()){
             SendMailBackground backgroundWorker = new SendMailBackground(this);
