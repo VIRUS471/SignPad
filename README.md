@@ -1,5 +1,5 @@
 # SignPad
-Using a canvass
+
 # OUTPUT FOLDER contains brief report and APK
 
 # https://drive.google.com/drive/folders/112x7CybzH2VwQozeXlJr9IaFHg5tkbs5?usp=sharing 
